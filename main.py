@@ -1,9 +1,7 @@
 import requests
 from fastapi import FastAPI, HTTPException
 from schemas.pokemon import Pokemon
-from db.database import get_connection
-from repositories.pokemon_repository import get_pokemon_by_number, insert_pokemon
-
+from repositories.pokemon_repository import get_pokemon_by_number
 
 app = FastAPI()
 
